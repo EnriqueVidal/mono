@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm --stream -r start",
+    "dev": "pnpm --stream -r run dev",
+    "clean": "git clean -fdX"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
