@@ -1,10 +1,14 @@
-import { DetailedHTMLProps, ImgHTMLAttributes } from "react";
+import { ImgHTMLAttributes } from 'react'
+import styled from 'styled-components'
 
-export type ProfileProps = DetailedHTMLProps<
-  ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
->;
+export type ProfileProps = ImgHTMLAttributes<HTMLImageElement>
+
+const ProfilePic = styled.img<ProfileProps>`
+  border-radius: 50%;
+`
+
+
 
 export default function Profile(props: ProfileProps): JSX.Element {
-  return <img {...props} />;
+  return <ProfilePic {...props} />
 }

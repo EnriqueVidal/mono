@@ -1,3 +1,4 @@
 {
-  "extends": "typescript-config/index.json"
+  "extends": "typescript-config/index.json",
+  "include": ["**/*", "node_modules/typescript-config/types/*"]
 }
