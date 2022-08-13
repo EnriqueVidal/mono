@@ -28,15 +28,31 @@ importers:
       eslint-config-next: 12.2.5_qugx7qdu5zevzvxaiqyxfiwquq
       typescript: 4.7.4
 
+  packages/prettier-config:
+    specifiers:
+      prettier: ^2.7.1
+    devDependencies:
+      prettier: 2.7.1
+
   packages/profile:
     specifiers:
       '@types/react': 18.0.17
+      prettier-config: workspace:^1.0.0
       react: 18.2.0
       typescript: 4.7.4
+      typescript-config: workspace:*
     dependencies:
       react: 18.2.0
     devDependencies:
       '@types/react': 18.0.17
+      prettier-config: link:../prettier-config
+      typescript: 4.7.4
+      typescript-config: link:../typescript-config
+
+  packages/typescript-config:
+    specifiers:
+      typescript: 4.7.4
+    devDependencies:
       typescript: 4.7.4
 
 packages:
@@ -1555,6 +1571,12 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /prop-types/15.8.1:
