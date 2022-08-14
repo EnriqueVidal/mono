@@ -1,11 +1,12 @@
 {
-  "name": "resume",
+  "name": "pnpm-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "pnpm --stream -r start",
     "dev": "pnpm --stream -r run dev",
+    "lint": "pnpm --stream -r run lint",
     "clean": "git clean -fdX"
   },
   "keywords": [],

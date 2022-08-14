@@ -10,6 +10,10 @@
       "noMarkDown": ["!{projectRoot}/**/*.md"]
     },
     "targetDefaults": {
+      "build": {
+        "inputs": ["noMarkDown", "^noMarkDown"],
+        "dependsOn": ["^build"]
+      },
       "lint": {
         "inputs": ["noMarkDown", "^noMarkDown"]
       },
@@ -18,6 +22,9 @@
       },
       "type-check": {
         "outputs": []
+      },
+      "dev": {
+        "dependsOn": ["^build"]
       }
     }
   }
