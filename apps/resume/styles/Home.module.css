@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.blockSection {
+  padding: 1em 0;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  gap: 4em;
+}
+
+.bio {
+  font-weight: 300;
+}
+
+.profilePic {
+  flex-shrink: 0;
+  filter: grayscale(100%);
+}
+
+.socialsList {
+  display: flex;
+  column-gap: 1em;
+  color: var(--mainLinkColor);
+  flex-wrap: wrap;
+}
+
+.cardTechStackItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.cardTechStack {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+}

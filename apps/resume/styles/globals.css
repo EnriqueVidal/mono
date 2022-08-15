@@ -1,0 +1,36 @@
+:root {
+  --secondaryTextColor: #333;
+  --mainBackgroundColor: #fff;
+  --mainBorderColor: #999;
+  --mainLinkColor: #666;
+  --mainTextColor: #000;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+}
+
+body {
+  background: var(--mainBackgroundColor);
+}
+
+a {
+  color: var(--mainLinkColor);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondaryTextColor);
+  text-decoration: underline;
+}
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  line-height: 1.9em;
+}
