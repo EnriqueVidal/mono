@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pnpm --stream -r start",
+    "start": "pnpm --stream -r run start",
     "dev": "pnpm --stream -r run dev",
     "lint": "pnpm --stream -r run lint",
     "clean": "git clean -fdX"

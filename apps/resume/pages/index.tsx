@@ -63,9 +63,13 @@ const Home: NextPage = () => {
       </Block>
 
       <Block className={styles.blockSection} title="Work History" omitWrapper>
-        <div>
-          <strong>Director of Fun | Darwinhomes.com</strong>
-          <p>10/2020 - Present</p>
+        <Block
+          className={styles.workPlace}
+          headingType="h3"
+          title="Director of Fun | Darwinhomes.com"
+          omitWrapper
+        >
+          <p className={styles.time}>10/2020 - Present</p>
           <p>
             I work here as a software engineering messing with frontend and
             backend code as well as a bunch of DX and infrastructure.
@@ -76,23 +80,68 @@ const Home: NextPage = () => {
             <li>Worked on moving us to github actions</li>
             <li>Worked on bricks component library</li>
           </ul>
-        </div>
-      </Block>
 
-      <Block className={styles.blockSection} title="Tech Stack">
-        <div className={styles.cardTechStackItems}>
-          <div className={styles.cardTechStack}>
-            <span>TypeScript, Ruby, Python</span>
-          </div>
+          <Block headingType="h3" title="Tech Stack">
+            <div className={styles.cardTechStackItems}>
+              <div className={styles.cardTechStack}>
+                <span>TypeScript, Javascript, Python</span>
+              </div>
 
-          <div className={styles.cardTechStack}>
-            <span>React, Rails, Django, Node</span>
-          </div>
+              <div className={styles.cardTechStack}>
+                <span>React, React Native, Django</span>
+              </div>
 
-          <div className={styles.cardTechStack}>
-            <span>Postgres, MySQL, MongoDB</span>
-          </div>
-        </div>
+              <div className={styles.cardTechStack}>
+                <span>Postgres, Apollo GraphQL</span>
+              </div>
+            </div>
+          </Block>
+        </Block>
+
+        <Block
+          className={styles.workPlace}
+          headingType="h3"
+          title="Sr. Software Engineer | AFAR Media"
+          omitWrapper
+        >
+          <p className={styles.time}>04/2019 - 04/2020</p>
+          <p>
+            I worked here helping AFAR migrate their web application to newer
+            tech stack to Node.js, GraphQL and React.
+          </p>
+
+          <ul>
+            <li>Wrote new UI in React</li>
+            <li>
+              Help migrate part of the backend code from Ruby on Rails to
+              Node.js
+            </li>
+            <li>
+              Wrote content parsers to clean code and apply new styles without
+              making editors rewrite their articles
+            </li>
+            <li>
+              Helped ad ops get more ad impressions and better balance and
+              comply with google&apos;s ad to content ratio
+            </li>
+          </ul>
+
+          <Block headingType="h3" title="Tech Stack">
+            <div className={styles.cardTechStackItems}>
+              <div className={styles.cardTechStack}>
+                <span>Javascript, Ruby</span>
+              </div>
+
+              <div className={styles.cardTechStack}>
+                <span>React, Ruby on Rails, Node.js, Next.js</span>
+              </div>
+
+              <div className={styles.cardTechStack}>
+                <span>Postgres, MongoDB, Apollo GraphQL</span>
+              </div>
+            </div>
+          </Block>
+        </Block>
       </Block>
     </div>
   )

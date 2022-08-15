@@ -40,3 +40,15 @@
   border: 1px solid var(--mainBorderColor);
   padding: 0.5em 1em;
 }
+
+.workPlace {
+  margin-bottom: 3em;
+}
+
+.workPlace > h3 {
+  margin-bottom: 0;
+}
+
+.workPlace .time {
+  margin-top: 0;
+}
