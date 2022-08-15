@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nx": "^14.5.5"
+    "nx": "14.5.6"
   }
 }

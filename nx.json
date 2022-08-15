@@ -1,31 +1,35 @@
 {
+  "extends": "nx/presets/npm.json",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "type-check"]
-      }
-    },
-    "namedInputs": {
-      "noMarkDown": ["!{projectRoot}/**/*.md"]
-    },
-    "targetDefaults": {
-      "build": {
-        "inputs": ["noMarkDown", "^noMarkDown"],
-        "dependsOn": ["^build"]
-      },
-      "lint": {
-        "inputs": ["noMarkDown", "^noMarkDown"]
-      },
-      "test": {
-        "inputs": ["noMarkDown", "^noMarkDown"]
-      },
-      "type-check": {
-        "outputs": []
-      },
-      "dev": {
-        "dependsOn": ["^build"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "format",
+          "type-check",
+          "test"
+        ]
       }
     }
+  },
+  "namedInputs": {
+    "noMarkDown": ["!{projectRoot}/**/*.md"]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["noMarkDown", "^noMarkDown"]
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "inputs": ["noMarkDown", "^noMarkDown"]
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
   }
 }

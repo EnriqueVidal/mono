@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "eslint": "8.21.0",
-    "eslint-config": "workspace:^1.0.0",
+    "eslint-config": "workspace:*",
     "eslint-import-resolver-typescript": "^3.4.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
